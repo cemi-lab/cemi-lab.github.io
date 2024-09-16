@@ -78,8 +78,16 @@
 </li>
 </ul>
   
-<h2>Electromagnetic Full-Wave Inversion Based on Physics-Constrained Artificial Neural Networks</h2>
+<h2>Electromagnetic Full-Wave Inversion Based on Physics-Driven Artificial Neural Networks</h2>
+  
+<p>Electromagnetic full-wave inversion essentially maps the measured field dataset to the scatterer model parameter set. Unfortunately, due to the intrinsic nonlinear relationship between the field data and model parameters, iterations are inevitable in the inversion. This directly leads to the highly demanding computational cost. 
+  The artificial neural network can significantly reduce the cost by learning/storing the partial/complete nonlinear relationship between the field data and scatterer model parameters in the offline training stage and thus accomplishing the inversion instantaneously in the online prediction stage. 
+  The neural network is usually trained by the big data in the field data space, in the model parameter space or in the mapping space. In this way, the neural network is a purely data-driven black box. It neglects the domain knowledge of electromagnetic scattering hidden behind the training data and is thus difficult to explain and predict.</p>
 
+<p>A physics-driven artificial neural network plays the role by fusing the known domain knowledge into the architecture or training process. This not only makes the neural network explainable and predictable but also reduces the training data amount and lowers the cost. For example, Green's functions in the integral equations formulating the electromagnetic scattering are explicitly known. 
+  Directly embedding their values in the network can avoid redundant learning in the training process. Using the differential operators of a neural network to describe the differential relationship between two physical variables in the Helmholtz equation is equivalent to mandatorily imposing known prior information in the training. 
+  Regularizing the network’s loss function by known scattering equations, e.g. integral equations or the Helmholtz equation can accelerate the training convergence and enhance the network's adaptability. Regarding these issues, we are working on following research directions:</p>
+  
 <h2>Optimizing Antenna Array Layout for Optimized Inversion Performance</h2>
 
 <h2>Subsurface Electromagnetic Imaging And Deep Earth Resource Exploration</h2>
