@@ -10,19 +10,17 @@
   ol.with-parentheses {
     list-style: none; /* 移除默认样式 */
     padding-left: 0; /* 移除默认左边距 */
-    margin-left: 20px;
   }
   ol.with-parentheses li {
     counter-increment: list-counter; /* 创建一个计数器 */
-    margin-left: 20px; /* 可选：设置左边距 */  
+    margin-left: 5px; /* 可选：设置左边距 */  
     list-style-position: outside;
   }
   ol.with-parentheses li::before {
     content: "[J" counter(list-counter) "] "; /* 在每个列表项前添加带括号的序号 */
-    display: inline-block; /* 使内容在同一行显示 */
     width: 30px; /* 可选：设置序号的宽度，以保持对齐 */
     text-align: right; /* 可选：使序号右对齐 */
-    margin-right: 10px;
+    margin-right: 5px;
   }
 </style>  
 </head>
@@ -232,6 +230,7 @@
 </table>
 </body>
 </html>
+
 
 
 
