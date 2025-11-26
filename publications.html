@@ -11,7 +11,6 @@
     list-style: none; /* 移除默认样式 */
     padding-left: 0; /* 移除默认左边距 */
     counter-reset: list-counter 65; /* 创建一个计数器 */   
-    text-align: left;
   }
   ol.with-parentheses li {
     counter-increment: list-counter -1;     
@@ -20,7 +19,7 @@
     margin-bottom: 4px; /* 下边距 */    
     padding-top: 2px; /* 上内边距 */
     padding-bottom: 2px; /* 下内边距 */
-    display: block;
+    padding-left: 20px;
   }
   ol.with-parentheses li::before {
     content: "[J" counter(list-counter) "] "; /* 在每个列表项前添加带括号的序号 */
@@ -255,6 +254,7 @@
 </table>
 </body>
 </html>
+
 
 
 
