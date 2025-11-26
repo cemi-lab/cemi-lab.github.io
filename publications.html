@@ -21,7 +21,7 @@
   }
   ol > li:before {
     content: counter(li) "."; /* 使用计数器生成内容 */
-    counter-increment: li; /* 递增计数器 */
+    counter-decrement: li; /* 递增计数器 */
     position: absolute; /* 绝对定位 */
     margin-left: -2em; /* 根据需要调整 */
   }
@@ -234,6 +234,7 @@
 </table>
 </body>
 </html>
+
 
 
 
