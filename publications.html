@@ -27,6 +27,27 @@
     text-align: right; /* 可选：使序号右对齐 */
     margin-right: 2px;
   }
+
+  ol.with-parentheses3 {
+    list-style: none; /* 移除默认样式 */
+    padding-left: 0; /* 移除默认左边距 */
+    counter-reset: list-counter 22; /* 创建一个计数器 */    
+  }
+  ol.with-parentheses3 li {
+    counter-increment: list-counter -1;     
+    margin-left: 5px; /* 可选：设置左边距 */  
+    margin-top: 4px; /* 上边距 */
+    margin-bottom: 4px; /* 下边距 */    
+    padding-top: 2px; /* 上内边距 */
+    padding-bottom: 2px; /* 下内边距 */    
+    list-style-position: outside;
+  }
+  ol.with-parentheses3 li::before {
+    content: "[C" counter(list-counter) "] "; /* 在每个列表项前添加带括号的序号 */
+    width: 30px; /* 可选：设置序号的宽度，以保持对齐 */
+    text-align: right; /* 可选：使序号右对齐 */
+    margin-right: 2px;
+  }
 </style>  
 </head>
 <body>
@@ -185,48 +206,48 @@
 </ol>
 
 <h2>Conference Presentations</h2>
-<ol type="1" reversed start="21">
-<li><p><b>Feng Han</b>, Kemeng Tao, Sijia Ma, “Electromagnetic diffraction tomographic reconstructibility in layered media: From 2-D to 3-D and from half-space to multiple layers,” The 47th PIERS, Chiba, Japan, November 5-9, 2025.</p></li>
+<ol class="with-parentheses3">
+<li><b>Feng Han</b>, Kemeng Tao, Sijia Ma, “Electromagnetic diffraction tomographic reconstructibility in layered media: From 2-D to 3-D and from half-space to multiple layers,” The 47th PIERS, Chiba, Japan, November 5-9, 2025.</li>
   
-<li><p><b>Feng Han</b>, Jiawen Li, Zhen Guan, “Hybrid electromagnetic reconstruction of multiple 2-D subsurface inhomogeneous scatterers based on FRTM and FEBI-LM methods enhanced by domain decomposition,” IEEE APS/URSI, Ottawa, Canada, July 13-18, 2025.</p></li>
+<li><b>Feng Han</b>, Jiawen Li, Zhen Guan, “Hybrid electromagnetic reconstruction of multiple 2-D subsurface inhomogeneous scatterers based on FRTM and FEBI-LM methods enhanced by domain decomposition,” IEEE APS/URSI, Ottawa, Canada, July 13-18, 2025.</li>
   
-<li><p><b>Feng Han</b>, Jiawen Li, “Electromagnetic reconstruction of 3-D subsurface objects straddling multiple planar layers by FEBI and LM methods,” The 46th PIERS, Abu Dhabi, UAE, May 4-8, 2025.</p></li>
+<li><b>Feng Han</b>, Jiawen Li, “Electromagnetic reconstruction of 3-D subsurface objects straddling multiple planar layers by FEBI and LM methods,” The 46th PIERS, Abu Dhabi, UAE, May 4-8, 2025.</li>
   
-<li><p><b>Feng Han</b>, Kemeng Tao, Sijia Ma, Jiawen Li, “VIE solutions of 2.5-D electromagnetic scattering by arbitrary anisotropic objects embedded in layered uniaxial media,” The 2024 ACES Symposium, Xi'an, China, August 16-19, 2024.</p></li>  
+<li><b>Feng Han</b>, Kemeng Tao, Sijia Ma, Jiawen Li, “VIE solutions of 2.5-D electromagnetic scattering by arbitrary anisotropic objects embedded in layered uniaxial media,” The 2024 ACES Symposium, Xi'an, China, August 16-19, 2024.</li>  
   
-<li><p><b>Feng Han</b>, Yanjin Chen, Miao Zhong, Zhen Guan, “A tailored semi-physics-driven and semi-data-driven artificial neural network for electromagnetic full-wave inversion,” The 43rd PIERS, Hangzhou, China, April 22-25, 2022.</p></li>
+<li><b>Feng Han</b>, Yanjin Chen, Miao Zhong, Zhen Guan, “A tailored semi-physics-driven and semi-data-driven artificial neural network for electromagnetic full-wave inversion,” The 43rd PIERS, Hangzhou, China, April 22-25, 2022.</li>
 
-<li><p><b>Feng Han</b>, Yanjin Chen, “A tailored semi-physics-driven and semi-data-driven artificial neural network for electromagnetic full-wave inversion,” IEEE APS/URSI, Marina Bay Sands, Singapore, December 4-10, 2021.</p></li>
+<li><b>Feng Han</b>, Yanjin Chen, “A tailored semi-physics-driven and semi-data-driven artificial neural network for electromagnetic full-wave inversion,” IEEE APS/URSI, Marina Bay Sands, Singapore, December 4-10, 2021.</li>
 
-<li><p><b>Feng Han</b>, Yanjin Chen, Sijia Li, “A tailored convolutional neural network with the sensitivity matrix embedded inside for electromagnetic full-wave inversion,” The 2021 International Applied Computational Electromagnetics Society (ACES) Symposium, Chengdu, China, July 28-31, 2021.</p></li>
+<li><b>Feng Han</b>, Yanjin Chen, Sijia Li, “A tailored convolutional neural network with the sensitivity matrix embedded inside for electromagnetic full-wave inversion,” The 2021 International Applied Computational Electromagnetics Society (ACES) Symposium, Chengdu, China, July 28-31, 2021.</li>
 
-<li><p><b>Feng Han</b>, Yanjin Chen, Jiawen Li, Jianliang Zhuo, Qing Huo Liu, “Fast multiparametric electromagnetic full-wave inversion via solving contracting scattering data equations optimized by the 3-D MRF model,” The 2020 IEEE MTT-S International Conference on Numerical Electromagnetic and Multiphysics Modeling and Optimization (NEMO), Hangzhou, China, December 7-9, 2020. <b>(Invited)</b></p></li>
+<li><b>Feng Han</b>, Yanjin Chen, Jiawen Li, Jianliang Zhuo, Qing Huo Liu, “Fast multiparametric electromagnetic full-wave inversion via solving contracting scattering data equations optimized by the 3-D MRF model,” The 2020 IEEE MTT-S International Conference on Numerical Electromagnetic and Multiphysics Modeling and Optimization (NEMO), Hangzhou, China, December 7-9, 2020. <b>(Invited)</b></li>
 
-<li><p><b>Feng Han</b>, Jiawen Li, Yanjin Chen, Jianliang Zhuo, Qing Huo Liu, “Deterministic nonlinear electromagnetic inversion hybridized with unsupervised machine learning,” The 42nd PIERS, Xiamen, China, December 17-20, 2019. <b>(Invited)</b></p></li>
+<li><b>Feng Han</b>, Jiawen Li, Yanjin Chen, Jianliang Zhuo, Qing Huo Liu, “Deterministic nonlinear electromagnetic inversion hybridized with unsupervised machine learning,” The 42nd PIERS, Xiamen, China, December 17-20, 2019. <b>(Invited)</b></li>
 
-<li><p><b>Feng Han</b>, Jiawen Li, Yanjin Chen, Qing Huo Liu, “Reconstruction of composite model parameters for 3-D microwave imaging of biaxial objects by BCGS- FFT and PSO,” The 42nd PIERS, Xiamen, China, December 17-20, 2019.</p></li>
+<li><b>Feng Han</b>, Jiawen Li, Yanjin Chen, Qing Huo Liu, “Reconstruction of composite model parameters for 3-D microwave imaging of biaxial objects by BCGS- FFT and PSO,” The 42nd PIERS, Xiamen, China, December 17-20, 2019.</li>
 
-<li><p><b>Feng Han</b>, Bingyang Liang, Jiawen Liu, Fanfan Liu, Gaopeng Lu, Qing Huo Liu, “Mid- and low-latitude ionospheric D region remote sensing by radio atmospherics-Part I: Forward modeling and field measurement validations,” The 15th National Radio Wave Propagation Annual Conference, Hefei, Anhui, China, October 17-19, 2019.</p></li>
+<li><b>Feng Han</b>, Bingyang Liang, Jiawen Liu, Fanfan Liu, Gaopeng Lu, Qing Huo Liu, “Mid- and low-latitude ionospheric D region remote sensing by radio atmospherics-Part I: Forward modeling and field measurement validations,” The 15th National Radio Wave Propagation Annual Conference, Hefei, Anhui, China, October 17-19, 2019.</li>
 
-<li><p><b>Feng Han</b>, Bingyang Liang, Jiawen Li, Feifan Liu, Gaopeng Lu, Qing Huo Liu, “Ionosphere D region remote Sensing by radio atmospherics,” IEEE APS/URSI, Atlanta, Georgia, U.S.A., July 7-12, 2019.</p></li>
+<li><b>Feng Han</b>, Bingyang Liang, Jiawen Li, Feifan Liu, Gaopeng Lu, Qing Huo Liu, “Ionosphere D region remote Sensing by radio atmospherics,” IEEE APS/URSI, Atlanta, Georgia, U.S.A., July 7-12, 2019.</li>
 
-<li><p><b>Feng Han</b>, Jiawen Li, Jianliang Zhuo, Yanjin Chen, Qing Huo Liu, “3-D electromagnetic inverse scattering by magneto-dielectric objects with arbitrary anisotropy in layered uniaxial media,” IEEE International Symposium on Antennas and Propagation and USNC-URSI Radio Science Meeting (APS/URSI), Atlanta, Georgia, U.S.A., July 7-12, 2019.</p></li>
+<li><b>Feng Han</b>, Jiawen Li, Jianliang Zhuo, Yanjin Chen, Qing Huo Liu, “3-D electromagnetic inverse scattering by magneto-dielectric objects with arbitrary anisotropy in layered uniaxial media,” IEEE International Symposium on Antennas and Propagation and USNC-URSI Radio Science Meeting (APS/URSI), Atlanta, Georgia, U.S.A., July 7-12, 2019.</li>
 
-<li><p><b>Feng Han</b>, Jianliang Zhuo, Yanhui Liu, Qing Huo Liu, “3-D scattering and inverse scattering for uniaxial anisotropic background media,” National Symposium on Electromagnetic Scattering and Inverse Scattering, Yan'an, Shaanxi, China, August 17-19, 2018.</p></li>
+<li><b>Feng Han</b>, Jianliang Zhuo, Yanhui Liu, Qing Huo Liu, “3-D scattering and inverse scattering for uniaxial anisotropic background media,” National Symposium on Electromagnetic Scattering and Inverse Scattering, Yan'an, Shaanxi, China, August 17-19, 2018.</li>
 
-<li><p><b>Feng Han</b>, Jianliang Zhuo, Na Liu, Hai Liu, Qing Huo Liu, “Scattering and inverse scattering from anisotropic objects embedded in layered uniaxial media,” The 40th PIERS, Toyama, Japan, August 1-4, 2018. <b>(Invited)</b></p></li>
+<li><b>Feng Han</b>, Jianliang Zhuo, Na Liu, Hai Liu, Qing Huo Liu, “Scattering and inverse scattering from anisotropic objects embedded in layered uniaxial media,” The 40th PIERS, Toyama, Japan, August 1-4, 2018. <b>(Invited)</b></li>
 
-<li><p><b>Feng Han</b>, Na Liu, Hai Liu, Qing Huo Liu, “On the computation of electromagnetic dyadic Green’s function in inhomogeneous forward and inverse scattering problems,” The 37th Progress in Electromagnetics Research Symposium (PIERS), Shanghai, China, August 8-11, 2016.</p></li>
+<li><b>Feng Han</b>, Na Liu, Hai Liu, Qing Huo Liu, “On the computation of electromagnetic dyadic Green’s function in inhomogeneous forward and inverse scattering problems,” The 37th Progress in Electromagnetics Research Symposium (PIERS), Shanghai, China, August 8-11, 2016.</li>
 
-<li><p><b>Feng Han</b>, Steven A. Cummer, “Midlatitude nighttime and daytime D region ionosphere variations measured from radio atmospherics,” AGU Fall Meeting, San Francisco, CA, U.S.A., December 13-17, 2010.</p></li>
+<li><b>Feng Han</b>, Steven A. Cummer, “Midlatitude nighttime and daytime D region ionosphere variations measured from radio atmospherics,” AGU Fall Meeting, San Francisco, CA, U.S.A., December 13-17, 2010.</li>
 
-<li><p><b>Feng Han</b>, Steven A. Cummer, “Midlatitude D region ionosphere remote sensing by broadband sferics,” CEDAR, Boulder, CO, U.S.A., June 20-25, 2010.</p></li>
+<li><b>Feng Han</b>, Steven A. Cummer, “Midlatitude D region ionosphere remote sensing by broadband sferics,” CEDAR, Boulder, CO, U.S.A., June 20-25, 2010.</li>
 
-<li><p><b>Feng Han</b>, Steven A. Cummer, “Lightning-induced D region disturbances detected by broadband VLF sferics,” American Geophysical Union (AGU) Fall Meeting, San Francisco, CA, U.S.A., December 14-18, 2009.</p></li>
+<li><b>Feng Han</b>, Steven A. Cummer, “Lightning-induced D region disturbances detected by broadband VLF sferics,” American Geophysical Union (AGU) Fall Meeting, San Francisco, CA, U.S.A., December 14-18, 2009.</li>
 
-<li><p><b>Feng Han</b>, Steven A. Cummer, “Midlatitude nighttime D region variability detected by broadband VLF sferics,” The 2nd International High Energy Particle Precipitation in the Atmosphere (HEPPA) Workshop, Boulder, CO, U.S.A., October 6-8, 2009.</p></li>
+<li><b>Feng Han</b>, Steven A. Cummer, “Midlatitude nighttime D region variability detected by broadband VLF sferics,” The 2nd International High Energy Particle Precipitation in the Atmosphere (HEPPA) Workshop, Boulder, CO, U.S.A., October 6-8, 2009.</li>
 
-<li><p><b>Feng Han</b>, Steven A. Cummer, “Midlatitude D region variabilities detected by broadband VLF sferics,” The Coupling, Energetics, and Dynamics of Atmospheric Regions (CEDAR), Santa Fe, NM, U.S.A., June 28-July 2, 2009.</p></li>
+<li><b>Feng Han</b>, Steven A. Cummer, “Midlatitude D region variabilities detected by broadband VLF sferics,” The Coupling, Energetics, and Dynamics of Atmospheric Regions (CEDAR), Santa Fe, NM, U.S.A., June 28-July 2, 2009.</li>
 
 
 </ol>
@@ -235,6 +256,7 @@
 </table>
 </body>
 </html>
+
 
 
 
