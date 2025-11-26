@@ -13,7 +13,8 @@
   }
   ol.with-parentheses li {
     counter-increment: list-counter; /* 创建一个计数器 */
-    margin-left: 20px; /* 可选：设置左边距 */
+    margin-left: 5px; /* 可选：设置左边距 */
+    margin-right: 5px; /* 可选：设置左边距 */
   }
   ol.with-parentheses li::before {
     content: "[" counter(list-counter) "] "; /* 在每个列表项前添加带括号的序号 */
@@ -229,6 +230,7 @@
 </table>
 </body>
 </html>
+
 
 
 
