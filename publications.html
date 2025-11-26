@@ -10,11 +10,12 @@
   ol.with-parentheses {
     list-style: none; /* 移除默认样式 */
     padding-left: 0; /* 移除默认左边距 */
-    text-align: left; /* 文字左对齐 */
   }
   ol.with-parentheses li {
     counter-increment: list-counter; /* 创建一个计数器 */
     margin-left: 5px; /* 可选：设置左边距 */
+    display: block; /* 或者使用 inline-block */
+    text-align: left; /* 确保文本左对齐 */    
   }
   ol.with-parentheses li::before {
     content: "[J" counter(list-counter) "] "; /* 在每个列表项前添加带括号的序号 */
@@ -230,6 +231,7 @@
 </table>
 </body>
 </html>
+
 
 
 
