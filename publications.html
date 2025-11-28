@@ -31,6 +31,7 @@
     list-style: none; /* 移除默认样式 */
     padding-left: 0; /* 移除默认左边距 */
     counter-reset: list-counter 22; /* 创建一个计数器 */    
+    list-style-position: outside;
   }
   ol.with-parentheses3 li {
     counter-increment: list-counter -1;     
@@ -43,7 +44,6 @@
   ol.with-parentheses3 li::before {
     content: "[C" counter(list-counter) "] "; /* 在每个列表项前添加带括号的序号 */
     width: 30px; /* 可选：设置序号的宽度，以保持对齐 */
-    text-align: right; /* 可选：使序号右对齐 */
     margin-right: 2px;
   }
 </style>  
@@ -254,6 +254,7 @@
 </table>
 </body>
 </html>
+
 
 
 
