@@ -81,13 +81,14 @@
   
 <h2>Electromagnetic Full-Wave Inversion Based on Physics-Driven Artificial Neural Networks</h2>
   
-<p>Electromagnetic full-wave inversion essentially maps the measured field dataset to the scatterer model parameter set. Unfortunately, due to the intrinsic nonlinear relationship between the field data and model parameters, iterations are inevitable in the inversion. This directly leads to the highly demanding computational cost. 
-  The artificial neural network can significantly reduce the cost by learning/storing the partial/complete nonlinear relationship between the field data and scatterer model parameters in the offline training stage and thus accomplishing the inversion instantaneously in the online prediction stage. 
-  The neural network is usually trained by the big data in the field data space, in the model parameter space or in the mapping space. In this way, the neural network is a purely data-driven black box. It neglects the domain knowledge of electromagnetic scattering hidden behind the training data and thus is difficult to explain and predict.</p>
+<p>Electromagnetic full-wave inversion essentially maps the measured field dataset to the scatterer model parameter set. However, the inherent nonlinear relationship between the field data and model parameters necessitates iterative processes during inversion, leading to significant computational demands. 
+  The use of artificial neural networks can significantly reduce the computational costs by learning and storing the partial or complete nonlinear relationship between the field data and scatterer model parameters during the offline training phase, thus enabling instantaneous inversion during the online prediction phase. 
+  Typically, the neural network is trained using the big data from the field data space, model parameter space, or mapping space. As a result, the neural network operates as a purely data-driven black box, ignoring the domain knowledge of electromagnetic scattering hidden behind the training data, which complicates its interpretability and predictability.</p>
 
-<p>A physics-driven artificial neural network plays the role by fusing the known domain knowledge into the architecture or training process. This not only makes the neural network explainable and predictable but also reduces the training data amount and lowers the cost. For example, Green's functions in the integral equations formulating the electromagnetic scattering are explicitly known. 
-  Directly embedding their values in the network not only makes the network structure more consistent with the scattering physical mechanism but also avoids redundant learning in the training process. Using the differential operators of a neural network to describe the differential relationship between two physical variables in the Helmholtz equation is equivalent to mandatorily imposing known prior information in the training. 
-  Regularizing the network’s loss function by known scattering equations, e.g. integral equations or the Helmholtz equation can accelerate the training convergence and enhance the network's adaptability. Regarding these issues, we are working on following research directions:</p>
+<p>A physics-driven artificial neural network incorporates established domain knowledge into its architecture or training process. This incorporation not only enhances the network's interpretability and predictability but also reduces the amount of training data and associated costs. 
+  For example, Green's functions, which are explicitly known in the integral equations that describe electromagnetic scattering, can be directly embedded into the network. This embedding not only makes the network structure more consistent with the scattering physical mechanism but also avoids redundant learning during training. 
+  Utilizing the differential operators of a neural network to represent the differential relationship between two physical variables in the Helmholtz equation is equivalent to mandatorily imposing known prior information in the training. 
+  Regularizing the network’s loss function with known scattering equations, such as integral equations or the Helmholtz equation, can expedite training convergence and enhance the network's adaptability. In light of these considerations, we are pursuing the following research directions:</p>
 
 <table border="3" style="border: none;">
 <tr style="border: none;">
@@ -100,11 +101,11 @@
 </tr>  
 </table>
 <ul>
-<li><p>Embeding physical variables such as Green's functions, basis functions, boundary conditions, differential operators, incident fields, etc. into the neural network.</p>
+<li><p>Integrating physical variables like Green's functions, basis functions, boundary conditions, differential operators, and incident fields into the neural network framework.</p>
 </li>
-<li><p>Using mathematical equations describing electromagnetic scattering or prior information of the targets to constrain the training process of the neural network.</p>
+<li><p>Using mathematical equations that describe electromagnetic scattering or leveraging prior knowledge about the targets to constrain the training process of the neural network.</p>
 </li>
-<li><p>Extending the existing study on full-wave inversion based on neural networks to a broader scope: scattering and inverse scattering based on scientific machine learning.</p>
+<li><p>Extending the existing studies on full-wave inversion based on neural networks to a broader scope: scattering and inverse scattering based on scientific machine learning.</p>
 </li>
 </ul>
 
@@ -182,4 +183,5 @@
 </table>
 </body>
 </html>
+
 
