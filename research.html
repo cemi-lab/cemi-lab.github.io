@@ -111,14 +111,15 @@
 
 <h2>Optimizing Antenna Array Layout for Optimized Inversion Performance</h2>
 
-<p>It is well-known that the configuration of a transceiver array directly influences the results of electromagnetic tomography. The common sense is that the lateral resolution heavily depends on the array aperture size while the radial one is mainly determined by the signal bandwidth. 
-  However, other factors such as antenna polarization, its radiation diagram, and coupling with the ambient medium also have non-negligible effects on the reconstruction of unknown targets. 
-  Therefore, it is of great importance to explore the most optimized antenna array layout to achieve the maximum reconstruction resolution in a certain electromagnetic detection scenario.</p>
+<p>The configuration of a transceiver array is widely acknowledged as a crucial factor affecting the outcomes of electromagnetic tomography. It is well-established that lateral resolution is significantly influenced by the array aperture size, while radial resolution is primarily determined by the signal bandwidth. 
+  However, other factors, such as antenna polarization, radiation pattern, and interaction with the ambient medium, also play substantial roles in the reconstruction of unknown targets. 
+  Therefore, it is essential to explore the optimal antenna array layout to achieve maximum reconstruction resolution in specific electromagnetic detection scenarios.</p>
 
-<p>In the framework of integral equations, with Born approximation for weak scattering, the Fourier spectra of the scattered electromagnetic fields sampled at the receiver array and the reconstructable spectra of the unknown targets are linearly correlated. Reducing the array aperture size results in the “lowpass” phenomenon of the scatterer reconstructable spectra in the lateral direction. 
-  By contrast, in the radial direction, the variations of the reconstructable spectra are complicated. They usually show “bandpass”, “bandstop” or even “allpass” with the decrease of the array aperture size due to the antenna radiation coupling with the background layer interface or the mutual coupling between two orthogonal directions in the 3-D electromagnetic scattering. 
-  These studies are only for ideal electromagnetic inversion. In a practical electromagnetic detection scenario, the ambient medium may have rough surfaces or even show inhomogeneity and the unknown targets can have high dielectric contrasts with respect to the ambient medium. They will directly lead to the failure of the linear correlation between the scattered field spectra and the scatterer reconstructable spectra. 
-  Moreover, the traditional Green’s functions for infinitesimal dipoles are invalid for practical antennas, e.g. Vivaldi or horn ones, which also may disrupt the linear correlation. Regarding these issues, we are working on following research directions:</p>
+<p>Within the framework of integral equations and using Born approximation for weak scattering, a linear correlation is established between the Fourier spectra of the scattered electromagnetic fields measured at the receiver array and the reconstructable spectra of the unknown targets. 
+  When the array aperture size is reduced, a "lowpass" effect occurs in the lateral direction of the scatterer reconstructable spectra. In contrast, the radial direction of the reconstructable spectra exhibits complex variations, often showing "bandpass," "bandstop," or even "allpass" characteristics as the array aperture size diminishes. 
+  This complexity stems from the antenna radiation coupling with the background layer interface or the mutual coupling between two orthogonal directions in 3-D electromagnetic scattering. These investigations are limited to ideal electromagnetic inversion scenarios. 
+  In practical electromagnetic detection contexts, the ambient medium may have rough surfaces or display inhomogeneity, and the unknown targets may present high dielectric contrasts relative to the ambient medium. Such conditions can disrupt the linear correlation between the scattered field spectra and the scatterer reconstructable spectra. 
+  Additionally, traditional Green's functions for infinitesimal dipoles are not applicable to practical antennas, such as Vivaldi or horn antennas, which may also interfere with the linear correlation. In light of these challenges, we are pursuing the following research directions:</p>
 
 
 <table border="3" style="border: none;">
@@ -138,26 +139,26 @@
 </tr>  
 </table>
 <ul>
-<li><p>Deriving the spectral relationship between scattered fields and scatterers when a more practical layout, e.g. real antenna radiation pattern, is taken into account.</p>
+<li><p>Exploring the spectral relationship between scattered electromagnetic fields and scatterers when a more practical layout, e.g., the real antenna radiation pattern, is taken into account.</p>
 </li>
-<li><p>Discarding the Born approximation and deriving the spectral relationship for strong electromagnetic scattering, e.g. targets having high contrasts.</p>
+<li><p>Moving beyond the Born approximation allows for deriving the spectral relationship relevant to strong electromagnetic scattering, as seen in targets with high contrast. </p>
 </li>
-<li><p>Building up a quantitative relationship between scattered field data and scatterer spectra based on differential equations adapting to arbitrarily inhomogeneous ambient media.</p>
+<li><p>Formulating a quantitative relationship between scattered field data and scatterer spectra through differential equations adapting to arbitrarily inhomogeneous ambient media.</p>
 </li>
-<li><p>Developing a reasonable and efficient antenna array layout optimization approach for the electromagnetic full-wave inversion based on either integral or differential equations.</p>
+<li><p>Developing a reasonable and efficient optimization strategy for antenna array layout in electromagnetic full-wave inversion based on either integral or differential equations.</p>
 </li>
 </ul>
   
 <h2>Subsurface Electromagnetic Imaging And Deep Earth Resource Exploration</h2>
 
-<p>Electromagnetic wave propagation has obviously different characteristics in different frequency regimes. In the high-frequency band, when the wavelength is much less than the concerned scale, the electromagnetic field shows high oscillation, and thus, the wave phenomenon dominates. 
-  In this situation, the targets can dramatically alter the wave direction, polarization, amplitude, phase, etc. via reflection, penetration, diffraction, interference, scattering, etc. The subsurface electromagnetic detection utilizes these wave parameter changes to infer the target parameters. 
-  For example, the reverse time migration obtains the target images by correlating the incident wave and the reflected wave in the timestamp of the target space position. 
-  The linear sampling method obtains the subsurface target images by converting the near-field electromagnetic field data recorded at the receiver array into the far-field spherically symmetric wave radiated by the fictitious focal source in the imaging domain. 
-  A more rigorous method, the full-wave inversion, can simultaneously obtain the subsurface target images and dielectric parameters by strictly solving the electromagnetic scattering equations.</p>
+<p>Electromagnetic wave propagation displays unique characteristics across different frequency ranges. In the high-frequency band, where the wavelength is considerably smaller than the relevant scale, the electromagnetic field exhibits pronounced oscillations, highlighting wave phenomena. 
+  In these situations, targets can significantly alter the wave's direction, polarization, amplitude, and phase through mechanisms such as reflection, penetration, diffraction, interference, and scattering. Subsurface electromagnetic detection utilizes these changes in wave parameters to infer target characteristics. 
+  For example, reverse time migration creates target images by correlating incident and reflected waves at the temporal point corresponding to the target's spatial position. The linear sampling method generates subsurface target images by converting near-field electromagnetic data, recorded at the receiver array, into far-field spherically symmetric waves emitted by a hypothetical focal source within the imaging domain. 
+  A more rigorous approach, full-wave inversion, can simultaneously derive subsurface target images and dielectric parameters by strictly solving the electromagnetic scattering equations.</p>
 
-<p>In the low-frequency band, when the wavelength is much larger than the concerned scale, it is a completely different story. The electromagnetic field exhibits an obvious diffusive phenomenon. In this situation, the skin depth becomes large and the electromagnetic field is always used to explore the anomalies e.g. metallic orebodies, buried in the deep Earth region. 
-  Meanwhile, due to the loss of the wave property and the weak changes of the field amplitude and phase caused by the anomalies, ordinary imaging methods such as reverse time migration and linear sampling fail. The distribution of the underground resistivity is usually retrieved by full-wave inversion based on either the integral-equation forward solver or the differential-equation forward solver with absorbing boundary conditions.</p>  
+<p>In the low-frequency band, where the wavelength far exceeds the scale of interest, the system's behavior changes significantly. The electromagnetic field exhibits a distinct diffusive phenomenon. Under these conditions, the skin depth increases significantly, and the electromagnetic field is often used to explore anomalies, such as metallic orebodies, buried in the deep-Earth region. 
+  However, due to the loss of the wave property and the weak variations in field amplitude and phase caused by these anomalies, conventional imaging techniques, like reverse time migration and linear sampling, become ineffective. 
+  As a result, the distribution of the underground resistivity is typically retrieved through full-wave inversion, based on either an integral-equation forward solver or a differential-equation forward solver with absorbing boundary conditions.</p>  
 
 <table border="3" style="border: none;">
 <tr style="border: none;">  
@@ -183,5 +184,6 @@
 </table>
 </body>
 </html>
+
 
 
