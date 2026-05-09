@@ -6,68 +6,47 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
 <title>Publications </title>
-<style>
-  ol.with-parentheses {
-    list-style: none; /* 移除默认样式 */
-    padding-left: 0; /* 移除默认左边距 */
-    counter-reset: list-counter 68; /* 创建一个计数器 */ 
-    list-style-position: outside;
-  }
-  ol.with-parentheses li {
-    counter-increment: list-counter -1;  
-    margin-left: 5px; /* 可选：设置左边距 */  
-    margin-top: 4px; /* 上边距 */
-    margin-bottom: 4px; /* 下边距 */    
-    padding-top: 2px; /* 上内边距 */
-    padding-bottom: 2px; /* 下内边距 */     
-  }
-  ol.with-parentheses li::before {
-    content: "[J" counter(list-counter) "] "; /* 在每个列表项前添加带括号的序号 */
-    width: 30px; /* 可选：设置序号的宽度，以保持对齐 */
-    margin-right: 2px;
+ <style>
+  /* 通用列表样式 */
+  ol.with-parentheses, ol.with-parentheses2, ol.with-parentheses3 {
+    list-style: none;
+    padding-left: 50px; /* 关键：给整个列表留出左边距，容纳悬挂的序号 */
+    margin-bottom: 20px;
   }
 
-ol.with-parentheses2 {
-    list-style: none; /* 移除默认样式 */
-    padding-left: 0; /* 移除默认左边距 */
-    counter-reset: list-counter 5; /* 创建一个计数器 */ 
-    list-style-position: outside;
-  }
-  ol.with-parentheses2 li {
-    counter-increment: list-counter -1;  
-    margin-left: 5px; /* 可选：设置左边距 */  
-    margin-top: 4px; /* 上边距 */
-    margin-bottom: 4px; /* 下边距 */    
-    padding-top: 2px; /* 上内边距 */
-    padding-bottom: 2px; /* 下内边距 */     
-  }
-  ol.with-parentheses2 li::before {
-    content: "[S" counter(list-counter) "] "; /* 在每个列表项前添加带括号的序号 */
-    width: 30px; /* 可选：设置序号的宽度，以保持对齐 */
-    margin-right: 2px;
-  }
-  
-  ol.with-parentheses3 {
-    list-style: none; /* 移除默认样式 */
-    padding-left: 0; /* 移除默认左边距 */
-    counter-reset: list-counter 22; /* 创建一个计数器 */    
-    list-style-position: outside;
-  }
+  /* 每个条目的通用设置 */
+  ol.with-parentheses li, 
+  ol.with-parentheses2 li, 
   ol.with-parentheses3 li {
-    counter-increment: list-counter -1;     
-    margin-left: 5px; /* 可选：设置左边距 */  
-    margin-top: 4px; /* 上边距 */
-    margin-bottom: 4px; /* 下边距 */    
-    padding-top: 2px; /* 上内边距 */
-    padding-bottom: 2px; /* 下内边距 */  
+    position: relative; /* 关键：相对定位 */
+    margin-bottom: 8px; /* 增加一点行间距更易阅读 */
+    text-align: justify; /* 文本两端对齐，看起来更整齐 */
   }
+
+  /* 悬挂序号的样式 */
+  ol.with-parentheses li::before,
+  ol.with-parentheses2 li::before,
   ol.with-parentheses3 li::before {
-    content: "[C" counter(list-counter) "] "; /* 在每个列表项前添加带括号的序号 */
-    width: 30px; /* 可选：设置序号的宽度，以保持对齐 */
-    margin-right: 2px;
+    position: absolute;
+    left: -50px;   /* 将序号向左拉到 padding-left 留出的空间里 */
+    width: 45px;   /* 序号占用的宽度 */
+    text-align: left;
+    font-weight: bold;
   }
-</style>  
-</head>
+
+  /* 分别设置计数器起始值 */
+  ol.with-parentheses { counter-reset: list-counter 68; }
+  ol.with-parentheses li { counter-increment: list-counter -1; }
+  ol.with-parentheses li::before { content: "[J" counter(list-counter) "]"; }
+
+  ol.with-parentheses2 { counter-reset: list-counter 5; }
+  ol.with-parentheses2 li { counter-increment: list-counter -1; }
+  ol.with-parentheses2 li::before { content: "[S" counter(list-counter) "]"; }
+
+  ol.with-parentheses3 { counter-reset: list-counter 23; } /* 建议根据实际数量调整 */
+  ol.with-parentheses3 li { counter-increment: list-counter -1; }
+  ol.with-parentheses3 li::before { content: "[C" counter(list-counter) "]"; }
+</style></head>
 <body>
 <table summary="Table for page layout." id="tlayout">
 <tr valign="top">
